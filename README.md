@@ -41,36 +41,3 @@ Copy code
 npm start
 O servidor será iniciado na porta 3000 (ou outra porta definida pela variável de ambiente PORT).
 
-Utilização da API:
-
-Acesse http://localhost:3000/api para obter a data e hora atuais.
-Para conversão de uma data Unix para UTC, utilize o formato http://localhost:3000/api/{timestamp}.
-Para converter uma data UTC para Unix, use o formato http://localhost:3000/api/{data-utc}.
-Utilize http://localhost:3000/api/hello para obter a saudação da API.
-Exemplo de Respostas da API
-Requisição: /api/1450137600
-
-Resposta:
-json
-Copy code
-{
-  "unix": 1450137600,
-  "utc": "Fri, 25 Dec 2015 00:00:00 GMT"
-}
-Requisição: /api/2015-12-25
-
-Resposta:
-json
-Copy code
-{
-  "unix": 1451001600000,
-  "utc": "Fri, 25 Dec 2015 00:00:00 GMT"
-}
-Requisição: /api/hello
-
-Resposta:
-json
-Copy code
-{
-  "greeting": "hello API"
-}
